@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.validation.Valid;
 import med.voll.api.medico.DadosCadastroMedico;
 import med.voll.api.medico.Medico;
 import med.voll.api.medico.MedicoRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
 @RestController
 @RequestMapping("medicos")
 public class MedicoController {
     @Autowired
     private MedicoRepository repository;
-   
+
     @PostMapping
     @Transactional
-    public void cadastrar(@RequestBody DadosCadastroMedico dados){
-        
+    public void cadastrar(@RequestBody @Valid DadosCadastroMedico dados) {
+
         repository.save(new Medico(dados));
     }
 
@@ -35,5 +35,5 @@ public class MedicoController {
 
         return medicos;
     }
-    
+
 }
