@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
 import med.voll.api.medico.DadosCadastroMedico;
+import med.voll.api.medico.DadosListagemMedico;
 import med.voll.api.medico.Medico;
 import med.voll.api.medico.MedicoRepository;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("medicos")
@@ -30,10 +30,9 @@ public class MedicoController {
     }
 
     @GetMapping
-    public List<Medico> consultarMedicos() {
-        List<Medico> medicos = repository.findAll();
+    public List<DadosListagemMedico> consultarMedicos() {
 
-        return medicos;
+        return repository.findAll().stream().map(DadosListagemMedico::new).toList();
     }
 
 }
