@@ -1,0 +1,44 @@
+{
+	"nome": "Bento Giovanni Alves",
+	"email": "bentogiovannialves@holtmail.com",
+	"crm": "123556",
+	"especialidade": "CARDIOLOGIA",
+	"telefone": "12982481478",
+	"endereco": {
+		"logradouro": "Rua José Gimenes",
+		"bairro": "Residencial Mombaça",
+		"cep": "12424100",
+		"cidade": "Pindamonhangaba",
+		"uf": "SP",
+		"numero": "822"
+	}
+},
+{
+	"nome": "Nicolas Pietro Bernardes",
+	"email": "nicolas_bernardes@moen.com.br",
+	"crm": "523456",
+	"especialidade": "DERMATOLOGIA",
+	"telefone": "12998784512",
+	"endereco": {
+		"logradouro": "Alameda das Hortências",
+		"bairro": "Ribeirão Grande",
+		"cep": "12404160",
+		"cidade": "Pindamonhangaba",
+		"uf": "SP",
+		"numero": "544"
+	}
+}{
+	"nome": "Vicente Daniel Daniel Fogaça",
+	"email": "vicente_fogaca@br.pwc.com",
+	"crm": "183456",
+	"especialidade": "GINECOLOGIA",
+	"telefone": "12998784512",
+	"endereco": {
+		"logradouro": "Rua José Murilo Monteiro",
+		"bairro": "Jardim Princesa",
+		"cep": "12424460",
+		"cidade": "Pindamonhangaba",
+		"uf": "SP",
+		"numero": "513"
+	}
+}
